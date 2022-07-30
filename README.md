@@ -11,3 +11,8 @@
 
   **Example:** MyFAIcon
   <br />
+
+- EvilIcons &rarr; EI
+
+  **Example:** MyEIIcon
+  <br />

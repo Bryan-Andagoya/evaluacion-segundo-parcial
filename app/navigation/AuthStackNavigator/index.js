@@ -41,8 +41,14 @@ export const AuthStackNavigator = () => {
             component={WelcomeScreen}
             options={{ headerShown: false }}
           />
+          <AuthStack.Screen
+            name="Register"
+            component={RegisterScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
           <AuthStack.Screen name="Login" component={LoginScreen} />
-          <AuthStack.Screen name="Register" component={RegisterScreen} />
         </>
       )}
     </AuthStack.Navigator>
