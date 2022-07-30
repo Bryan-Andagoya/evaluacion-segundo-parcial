@@ -6,10 +6,13 @@ export const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     // backgroundColor: 'bisque',
+    backgroundColor: 'white',
   },
   logoContainer: {
     // backgroundColor: 'chartreuse',
     alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
   },
   logoText: {
     // backgroundColor: 'cornsilk',
@@ -20,6 +23,8 @@ export const styles = StyleSheet.create({
   logInWithFacebookButtonContainer: {
     // backgroundColor: 'tomato',
     alignItems: 'center',
+    flex: 1 / 4,
+    justifyContent: 'center',
   },
   logInWithFacebookButton: {
     backgroundColor: colors.BUTTON_BLUE,
@@ -45,6 +50,7 @@ export const styles = StyleSheet.create({
     borderColor: colors.MEDIUM_GRAY,
   },
   orText: {
+    // backgroundColor: 'red',
     color: colors.DARK_GRAY,
     fontSize: 20,
     textAlign: 'center',
@@ -53,10 +59,25 @@ export const styles = StyleSheet.create({
   registerButtonContainer: {
     // backgroundColor: 'lightgreen',
     padding: 20,
+    flex: 1 / 5,
   },
   registerButtonText: {
     color: colors.BUTTON_BLUE,
     fontWeight: 'bold',
     textAlign: 'center',
+  },
+  logInContainer: {
+    // backgroundColor: 'skyblue',
+    alignItems: 'center',
+    flexBasis: 50,
+    justifyContent: 'center',
+  },
+  logInText: {
+    // backgroundColor: 'violet',
+    fontSize: 13,
+    textAlign: 'center',
+  },
+  boldText: {
+    fontWeight: 'bold',
   },
 });
