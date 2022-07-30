@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  extends: 'universe/native',
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'import/namespace': [2, { allowComputed: false }],

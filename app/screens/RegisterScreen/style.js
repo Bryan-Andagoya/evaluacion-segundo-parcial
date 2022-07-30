@@ -22,4 +22,31 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
+  phoneInputContainer: {
+    backgroundColor: 'tan',
+    paddingHorizontal: 25,
+  },
+  input: {
+    backgroundColor: colors.LIGHT_GRAY,
+    flexDirection: 'row',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingVertical: 8,
+    borderColor: colors.MEDIUM_GRAY,
+  },
+  phoneCodeContainer: {
+    borderEndWidth: 1,
+    borderColor: colors.MEDIUM_GRAY,
+    paddingHorizontal: 13,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  phoneCodeText: {
+    fontWeight: 'bold',
+    color: colors.DARK_GRAY,
+    fontSize: 15,
+  },
+  phoneNumberContainer: {
+    paddingHorizontal: 13,
+  },
 });
