@@ -1,20 +1,15 @@
-import {
-  ActivityIndicator,
-  Alert,
-  Text,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
-import React from 'react';
-import { styles } from './style';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { FacebookFA5Icon } from 'app/icons';
-import { SeparatorComponent } from 'app/components';
-import * as Facebook from 'expo-facebook';
-import { useUserContext } from 'app/context';
-import { FacebookAuthProvider, signInWithCredential } from 'firebase/auth';
+/* eslint-disable import/namespace */
+import { AuthFooterComponent, SeparatorComponent } from 'app/components';
 import { auth } from 'app/config';
+import { useUserContext } from 'app/context';
+import { FacebookFA5Icon } from 'app/icons';
+import * as Facebook from 'expo-facebook';
+import { FacebookAuthProvider, signInWithCredential } from 'firebase/auth';
+import React from 'react';
+import { ActivityIndicator, Alert, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import { styles } from './style';
 
 // appId: '1362106654281999'
 // Faceboook key hash: ymhKdE2D2AJkwqAqv1vLb3n5POM=
@@ -39,7 +34,7 @@ export const WelcomeScreen = ({ navigation }) => {
 
         await signInWithCredential(auth, credential);
       }
-    } catch (error) {
+    } catch {
       Alert.alert('¡Algo salió mal!', 'Error al iniciar sesión con Facebook');
     }
 
@@ -79,13 +74,12 @@ export const WelcomeScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <SeparatorComponent />
-      <View style={styles.logInContainer}>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Login')}>
-          <Text style={styles.logInText}>
-            ¿Ya tienes una cuenta? <Text style={styles.boldText}>Inicia sesión</Text>
-          </Text>
-        </TouchableWithoutFeedback>
-      </View>
+      <AuthFooterComponent
+        navigation={navigation}
+        text="¿Ya tienes una cuenta?"
+        boldText="Inicia sesión"
+        screen="Login"
+      />
     </SafeAreaView>
   );
 };

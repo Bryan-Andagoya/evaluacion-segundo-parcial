@@ -8,12 +8,19 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   userIconContainer: {
-    backgroundColor: 'silver',
+    // backgroundColor: 'silver',
     alignItems: 'center',
+    justifyContent: 'flex-end',
+    flexGrow: 0,
+    paddingVertical: 5,
+  },
+  formContainer: {
+    // backgroundColor: 'gold',
+    paddingHorizontal: 25,
+    flex: 1,
   },
   tabsContainer: {
-    backgroundColor: 'thistle',
-    paddingHorizontal: 25,
+    // backgroundColor: 'thistle',
     flexDirection: 'row',
   },
   tab: {
@@ -23,8 +30,8 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   phoneInputContainer: {
-    backgroundColor: 'tan',
-    paddingHorizontal: 25,
+    // backgroundColor: 'tan',
+    paddingTop: 10,
   },
   input: {
     backgroundColor: colors.LIGHT_GRAY,
@@ -47,6 +54,56 @@ export const styles = StyleSheet.create({
     fontSize: 15,
   },
   phoneNumberContainer: {
+    // backgroundColor: 'coral',
+    marginHorizontal: 13,
+    flexDirection: 'row',
+    flex: 1,
+  },
+  phoneInput: {
+    fontSize: 15,
+    // backgroundColor: 'blue',
+    flex: 1,
+    marginEnd: 13,
+  },
+  emailInput: {
+    // backgroundColor: 'palegreen',
     paddingHorizontal: 13,
+    fontSize: 15,
+    flex: 1,
+  },
+  xmarkContainer: {
+    paddingEnd: 13,
+  },
+  errorMessageContainer: {
+    // backgroundColor: 'palegreen',
+  },
+  errorMessage: {
+    fontSize: 12,
+    color: colors.ERROR_MAIN,
+  },
+  messageContainer: {
+    // backgroundColor: 'paleturquoise',
+    alignItems: 'center',
+    paddingHorizontal: 5,
+    paddingTop: 10,
+  },
+  messageText: {
+    textAlign: 'center',
+    fontSize: 12,
+  },
+  buttonContainer: {
+    // backgroundColor: 'navajowhite',
+    paddingVertical: 10,
+  },
+  button: {
+    backgroundColor: colors.BUTTON_BLUE,
+    padding: 13,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: '500',
+    fontSize: 14,
   },
 });

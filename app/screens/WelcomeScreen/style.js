@@ -66,18 +66,4 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
-  logInContainer: {
-    // backgroundColor: 'skyblue',
-    alignItems: 'center',
-    flexBasis: 50,
-    justifyContent: 'center',
-  },
-  logInText: {
-    // backgroundColor: 'violet',
-    fontSize: 13,
-    textAlign: 'center',
-  },
-  boldText: {
-    fontWeight: 'bold',
-  },
 });

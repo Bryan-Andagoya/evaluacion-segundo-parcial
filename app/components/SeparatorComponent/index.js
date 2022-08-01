@@ -1,7 +1,9 @@
-import { View } from 'react-native';
+/* eslint-disable import/namespace */
 import React from 'react';
+import { View } from 'react-native';
+
 import { styles } from './style';
 
-export const SeparatorComponent = () => {
-  return <View style={styles.separator}></View>;
+export const SeparatorComponent = ({ width }) => {
+  return <View style={[styles.separator, { width: width === undefined ? '100%' : width }]} />;
 };
